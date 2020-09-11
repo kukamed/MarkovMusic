@@ -25,3 +25,10 @@ python extract_matrix.py dataset_folder
 
 python sequence_generator.py dataset_folder output_file_name.mid number_of_chords 
 
+
+
+Code based on this paper:
+
+MEDEIROS, R. J. V. ; SANTOS, R. S. ; PITOMBEIRA, Liduino . Modelagem Sistêmica baseada em Cadeias de Markov. In: XXI Congresso da ANPPOM, 2011, Uberlândia. Anais do XXI Congresso da ANPPOM, 2011.
+
+https://anppom.com.br/congressos/index.php/21anppom/Uberlandia2011/rt/printerFriendly/681/0
