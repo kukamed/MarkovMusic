@@ -30,9 +30,9 @@ for file in glob.glob(sys.argv[1] + "/*.mid"):
     
     if key.mode == "minor":
         check_or_create_folder(sys.argv[2] + '/Am')
-        newFileName = sys.argv[2] + "/Am/" + file.split('\\')[-1]
+        newFileName = sys.argv[2] + "/Am/" + os.path.split(file)[-1]
         newscore.write('midi',newFileName)
     if key.mode == "major":
         check_or_create_folder(sys.argv[2] + '/C')
-        newFileName = sys.argv[2] + "/C/" + file.split('\\')[-1]
+        newFileName = sys.argv[2] + "/C/" + os.path.split(file)[-1]
         newscore.write('midi',newFileName)
