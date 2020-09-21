@@ -32,6 +32,6 @@ for file in glob.glob(sys.argv[1] + "/*.mid"):
         new_key = keys[ (key_index + i) % 12]
         folder = f'{new_key} {key.mode}'
         check_or_create_folder( sys.argv[2] + '/' + folder)
-        file_name = file.split('\\')[-1]
+        file_name = os.path.split(file)[-1]
         newFileName = f'{sys.argv[2]}/{folder}/{file_name}'
         newscore.write('midi',newFileName)
